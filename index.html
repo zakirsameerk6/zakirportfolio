@@ -3,18 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mohd Zakir</title>
+    <title>Mohd Zakir - Full Stack Developer (MERN)</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Mohd Zakir, Full Stack Developer, MERN Stack, React.js, Web Developer, AI ML Workflows"
+        name="keywords">
+    <meta
+        content="Portfolio of Mohd Zakir - Full Stack Developer specializing in MERN stack, modern web development, and AI/ML workflows."
+        name="description">
+    <meta name="theme-color" content="#080B14">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts (Plus Jakarta Sans & JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -33,347 +38,551 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
+    <!-- Ambient Glow Mesh Background -->
+    <div class="ambient-glow-wrapper" aria-hidden="true">
+        <div class="ambient-orb ambient-orb-1"></div>
+        <div class="ambient-orb ambient-orb-2"></div>
+        <div class="ambient-orb ambient-orb-3"></div>
+    </div>
+
     <!-- Spinner Start -->
     <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="luxury-spinner" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
 
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-light fixed-top shadow py-lg-0 px-2 px-lg-5 wow fadeIn"
-    data-wow-delay="0.1s">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm py-3 px-3 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid px-lg-4">
+            <a href="#home" class="navbar-brand">
+                <span class="brand-badge">MZ</span>
+                <span class="brand-text">Mohd Zakir<span class="brand-dot">.</span></span>
+            </a>
 
-    <a href="index.html" class="navbar-brand d-block d-lg-none">
-        <h1 class="text-white fw-bold m-0">Portfolio</h1>
-    </a>
+            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <button type="button"
-        class="navbar-toggler collapsed"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-
-        <div class="navbar-nav ms-auto py-0">
-            <a href="#home" class="nav-item nav-link text-white active">Home</a>
-            <a href="#about" class="nav-item nav-link text-white">About</a>
-            <a href="#skill" class="nav-item nav-link text-white">Skills</a>
-        </div>
-
-        <div class="navbar-nav me-auto py-0">
-            <a href="#project" class="nav-item nav-link text-white">Projects</a>
-            <a href="#contact" class="nav-item nav-link text-white">Contact</a>
-        </div>
-
-    </div>
-</nav>
-<!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h2 class="text-white mb-3">I'm</h2>
-                    <h1 class="display-3 mb-3"style="color: rgb(240, 240, 244); text-shadow: 0 0 2px rgb(194, 197, 197), 0 0 0 cyan;">
-                          Mohd Zakir
-                    </h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div  id="typed-text"  class="typed-text text-white d-none">Full Stack Developer (MERN)</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="resume26.pdf" class="btn btn-primary py-3 px-4 me-5" download="Zakir_Resume.pdf">Download
-                            CV</a>
-                        <a href="#contact" class="btn btn-secondary py-3 px-4 me-5">Contact-Us</a>
-                        <!--
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src=""  data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Contact Us</h5>
-                        -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav align-items-lg-center py-3 py-lg-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#skill" class="nav-item nav-link">Skills</a>
+                    <a href="#project" class="nav-item nav-link">Projects</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="resume26.pdf" class="btn btn-primary btn-sm py-2 px-3" download="Zakir_Resume.pdf">
+                            <i class="fas fa-arrow-down me-1"></i> CV
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header / Hero Start -->
+    <div class="container-fluid my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Hero Left Column -->
+                <div class="col-lg-6 py-4 pt-lg-0">
+                    <div class="hero-status-badge wow fadeInDown" data-wow-delay="0.1s">
+                        <span class="status-dot-pulse"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+
+                    <h2 class="hero-greeting wow fadeInUp" data-wow-delay="0.2s">Hello, I'm</h2>
+                    <h1 class="hero-name text-gradient-heading wow fadeInUp" data-wow-delay="0.3s">
+                        Mohd Zakir
+                    </h1>
+
+                    <div class="d-flex align-items-center mb-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <h2 class="typed-text-output d-inline"></h2>
+                        <div id="typed-text" class="typed-text d-none">Full Stack Developer (MERN), Modern Web
+                            Developer, AI/ML Workflow Specialist</div>
+                    </div>
+
+                    <p class="hero-description wow fadeInUp" data-wow-delay="0.5s">
+                        Passionate software developer building functional, scalable, and user-focused web solutions with
+                        modern technologies and clean architecture.
+                    </p>
+
+                    <div class="hero-cta-group wow fadeInUp" data-wow-delay="0.6s">
+                        <a href="resume26.pdf" class="btn btn-primary" download="Zakir_Resume.pdf">
+                            <i class="fas fa-file-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Interactive Bento IDE Preview) -->
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="hero-visual-card position-relative">
+                        <!-- Floating Badges -->
+                        <div class="hero-floating-badge floating-badge-1">
+                            <div class="badge-icon-box icon-box-react">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>Full Stack (MERN)</span>
+                        </div>
+
+                        <div class="hero-floating-badge floating-badge-2">
+                            <div class="badge-icon-box icon-box-ai">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span>AI &amp; ML Workflows</span>
+                        </div>
+
+                        <!-- IDE Header -->
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                            </div>
+                            <div class="window-tab">
+                                <i class="fas fa-code text-primary"></i>
+                                <span>developer.config.js</span>
+                            </div>
+                        </div>
+
+                        <!-- Code Preview Block -->
+                        <pre class="code-preview"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">'Mohd Zakir'</span>,
+  <span class="code-property">title</span>: <span class="code-string">'Full Stack Developer'</span>,
+  <span class="code-property">coreStack</span>: [
+    <span class="code-string">'React.js'</span>, <span class="code-string">'JavaScript (ES6+)'</span>,
+    <span class="code-string">'Node.js'</span>, <span class="code-string">'Bootstrap'</span>, <span class="code-string">'Tailwind'</span>
+  ],
+  <span class="code-property">aiExperience</span>: <span class="code-string">'AI/ML Training &amp; Annotation'</span>,
+  <span class="code-property">location</span>: <span class="code-string">'New Delhi, India'</span>,
+  <span class="code-property">status</span>: <span class="code-string">'Ready to build impactful solutions'</span>
+};</code></pre>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
-
-
-
+    <!-- Header / Hero End -->
 
 
     <!-- About Start -->
     <div class="container-xxl py-6" id="about">
         <div class="container">
             <div class="row g-5">
+                <!-- About Left -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-4">About Me</h1>
-                      <p class="mb-4"> I’m a passionate Software Developer who enjoys turning ideas into modern, responsive, and user-friendly web experiences. I love building clean interfaces, solving real-world problems, and creating applications that are both functional and visually engaging. </p>
-                       <p class="mb-4"> Beyond development, I’m interested in AI/ML, digital marketing, marketing analytics, and business strategy. I’m always curious to learn new technologies, improve my skills, and take on challenging projects that help me grow as a professional. </p>
+                    <div class="bento-card h-100">
+                        <div class="section-eyebrow">
+                            <span class="section-eyebrow-dot"></span>
+                            <span>About Me</span>
+                        </div>
+
+                        <h2 class="section-title text-gradient-heading">
+                            Crafting Modern, Engaging &amp; Scalable Web Experiences
+                        </h2>
+
+                        <p class="mb-4">
+                            I’m a passionate Software Developer who enjoys turning ideas into modern, responsive, and
+                            user-friendly web experiences. I love building clean interfaces, solving real-world
+                            problems, and creating applications that are both functional and visually engaging.
+                        </p>
+
+                        <p class="mb-4">
+                            Beyond development, I’m interested in AI/ML, digital marketing, marketing analytics, and
+                            business strategy. I’m always curious to learn new technologies, improve my skills, and take
+                            on challenging projects that help me grow as a professional.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="about-highlights-grid mt-auto">
+                            <div class="about-highlight-item">
+                                <i class="fas fa-code about-highlight-icon"></i>
+                                <span class="about-highlight-text">Clean &amp; Scalable Code</span>
+                            </div>
+                            <div class="about-highlight-item">
+                                <i class="fas fa-mobile-alt about-highlight-icon"></i>
+                                <span class="about-highlight-text">Responsive UI/UX</span>
+                            </div>
+                            <div class="about-highlight-item">
+                                <i class="fas fa-brain about-highlight-icon"></i>
+                                <span class="about-highlight-text">AI &amp; ML Support</span>
+                            </div>
+                            <div class="about-highlight-item">
+                                <i class="fas fa-chart-line about-highlight-icon"></i>
+                                <span class="about-highlight-text">Marketing Analytics</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!-- About Right Bento Stack -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex flex-column gap-4 h-100">
+                        <!-- AI & ML Bento Card -->
+                        <div class="bento-card flex-fill">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <span class="bento-tag bento-tag-purple">
+                                    <i class="fas fa-robot me-1"></i> AI EXPERIENCE
+                                </span>
+                                <div class="bento-icon-wrapper mb-0">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
 
-    <div class="about-right">
-        <!-- AI & ML -->
-        <div class="about-card bg-light rounded p-0 mb-4">
+                            <h4 class="text-white mb-2">AI &amp; ML Workflows</h4>
 
-            <div class="d-flex align-items-center mb-3">
+                            <p class="text-muted mb-3">
+                                Experience with AI training workflows including data annotation,
+                                evaluation, quality checking and AI/ML-related tasks.
+                            </p>
 
+                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                <span class="tech-tag">Data Annotation</span>
+                                <span class="tech-tag">Model Evaluation</span>
+                                <span class="tech-tag">Quality Assurance</span>
+                            </div>
+                        </div>
 
-                <div>
-                    <span class="fs-4  text-primary fw-bold">
-                        AI EXPERIENCE
-                    </span>
+                        <!-- Featured Project Bento Card -->
+                        <div class="bento-card flex-fill">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <span class="bento-tag">
+                                    <i class="fas fa-star me-1"></i> FEATURED PROJECT
+                                </span>
+                                <div class="bento-icon-wrapper mb-0">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                            </div>
 
-                    <h5 class="mb-0">
-                        AI & ML Workflows
-                    </h5>
+                            <h4 class="text-white mb-2">FixxBuddy</h4>
+
+                            <p class="mb-4">
+                                A web-based home-service booking platform that connects customers with service
+                                professionals for services such as
+                                AC repair, plumbing, electrical work, and cleaning. The platform streamlines the
+                                complete service process,
+                                from booking and professional assignment to quotation approval, service execution,
+                                feedback, and service history.
+                            </p>
+
+                            <div class="mt-auto">
+                                <a href="#project" class="btn btn-primary btn-sm px-4">
+                                    View Project
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-
-            <p class="text-muted mb-0">
-                Experience with AI training workflows including data annotation,
-                evaluation, quality checking and AI/ML-related tasks.
-            </p>
-
-        </div>
-
-
-        <!-- Featured Project -->
-        <div class="class="about-card bg-light rounded p-0 mb-4">
-
-            <div class="d-flex align-items-center mb-3">
-
-
-
-                <div>
-                    <span class="fs-4  text-primary fw-bold">
-                        FEATURED PROJECT
-                    </span>
-
-                    <h5 class="mb-0">
-                        FixxBuddy
-                    </h5>
-                </div>
-
-            </div>
-
-            <p>
-               A web-based home-service booking platform that connects customers with service professionals for services such as 
-               AC repair, plumbing, electrical work, and cleaning. The platform streamlines the complete service process, 
-               from booking and professional assignment to quotation approval, service execution, feedback, and service history.
-               
-            </p>
-
-            <a href="#project" class="btn btn-primary px-4 align-self-start">
-                View Project
-                <i class="fas fa-arrow-right ms-2"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-               </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
 
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
+    <!-- Expertise / Skills & Experience Start -->
+    <div class="container-xxl py-6" id="skill">
         <div class="container">
-            <div class="row g-5">
+            <!-- Section Header -->
+            <div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8">
+                    <div class="section-eyebrow">
+                        <span class="section-eyebrow-dot"></span>
+                        <span>Expertise</span>
+                    </div>
+                    <h2 class="section-title text-gradient-heading">Skills &amp; Experience</h2>
+                    <p class="text-secondary mb-0">
+                        A comprehensive overview of my technical toolset, hands-on capabilities, and professional
+                        timeline.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-start">
+                <!-- Left: Skills Overview & Progress Bars -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4"><strong>Software Development:</strong> Developing functional, scalable, and user-focused software solutions with modern technologies, clean code, and practical problem-solving.<br>
+                    <div class="bento-card mb-4">
+                        <h4 class="text-white mb-3"><i class="fas fa-terminal text-cyan me-2"></i>Core Competencies</h4>
+                        <p class="mb-2"><strong>Software Development:</strong> Developing functional, scalable, and
+                            user-focused software solutions with modern technologies, clean code, and practical
+                            problem-solving.</p>
+                        <p class="mb-2"><strong>Frontend &amp; Web Development:</strong> Building responsive, modern,
+                            and user-friendly web applications using React.js, JavaScript, HTML5, CSS3, Tailwind CSS,
+                            and Bootstrap.</p>
+                        <p class="mb-2"><strong>AI &amp; ML Support:</strong> Working with AI training workflows
+                            including data annotation, evaluation, quality checking, and AI/ML-related tasks.</p>
+                        <p class="mb-0"><strong>Digital Marketing:</strong> Using SEO, content, social media, and
+                            digital marketing strategies to improve online visibility, audience engagement, and brand
+                            presence.</p>
+                    </div>
 
-                                    <strong>Frontend & Web Development:</strong> Building responsive, modern, and user-friendly web applications using React.js, JavaScript, HTML5, CSS3, Tailwind CSS, and Bootstrap.<br>
+                    <h4 class="text-white mb-4"><i class="fas fa-layer-group text-cyan me-2"></i>Technical Skills</h4>
 
-                                    <strong>AI & ML Support:</strong> Working with AI training workflows including data annotation, evaluation, quality checking, and AI/ML-related tasks.<br>
-
-                                    <strong>Digital Marketing:</strong> Using SEO, content, social media, and digital marketing strategies to improve online visibility, audience engagement, and brand presence.
-                                    </p>
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
+                    <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                            <!-- HTML -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-html5 skill-icon text-danger"></i>
+                                        <h6 class="skill-name">HTML5</h6>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
+                                    <div class="progress-bar progress-bar-indigo" role="progressbar" aria-valuenow="90"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+
+                            <!-- CSS -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-css3-alt skill-icon text-primary"></i>
+                                        <h6 class="skill-name">CSS3</h6>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
+                                    <div class="progress-bar progress-bar-cyan" role="progressbar" aria-valuenow="85"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Java Script</h6>
-                                    <h6 class="font-weight-bold">65%</h6>
+
+                            <!-- JavaScript -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-js skill-icon text-warning"></i>
+                                        <h6 class="skill-name">JavaScript</h6>
+                                    </div>
+                                    <span class="skill-percent">65%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                    <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="65"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">React</h6>
-                                    <h6 class="font-weight-bold">65%</h6>
+
+                            <!-- React -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-react skill-icon text-cyan"></i>
+                                        <h6 class="skill-name">React.js</h6>
+                                    </div>
+                                    <span class="skill-percent">65%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
+                                    <div class="progress-bar progress-bar-indigo" role="progressbar" aria-valuenow="65"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Bootstrap</h6>
-                                    <h6 class="font-weight-bold">70%</h6>
+                            <!-- Bootstrap -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-bootstrap skill-icon text-purple"></i>
+                                        <h6 class="skill-name">Bootstrap</h6>
+                                    </div>
+                                    <span class="skill-percent">70%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                    <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">C/C++</h6>
-                                    <h6 class="font-weight-bold">70%</h6>
+
+                            <!-- C/C++ -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fas fa-code skill-icon text-indigo"></i>
+                                        <h6 class="skill-name">C/C++</h6>
+                                    </div>
+                                    <span class="skill-percent">70%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
+                                    <div class="progress-bar progress-bar-cyan" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Wordpress</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+
+                            <!-- WordPress -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fab fa-wordpress skill-icon text-info"></i>
+                                        <h6 class="skill-name">WordPress</h6>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"
+                                    <div class="progress-bar progress-bar-indigo" role="progressbar" aria-valuenow="85"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">tailwind CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+
+                            <!-- Tailwind CSS -->
+                            <div class="skill-card skill">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fas fa-wind skill-icon text-cyan"></i>
+                                        <h6 class="skill-name">Tailwind CSS</h6>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
+                                    <div class="progress-bar progress-bar-cyan" role="progressbar" aria-valuenow="85"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+
+                <!-- Right: Experience & Education Interactive Tabs -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills custom-tab-pills mb-4">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                href="#tab-1">Experience
+                            <button class="nav-link w-100 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fas fa-briefcase"></i> Experience
                             </button>
                         </li>
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                href="#tab-2">Education
+                            <button class="nav-link w-100" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fas fa-graduation-cap"></i> Education
                             </button>
                         </li>
                     </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Software Developer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2024 - Present</p>
-                                    <h6 class="mb-0">Freelance Projects</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Customer Support Executive</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2024 - 2024</p>
-                                    <h6 class="mb-0">Startek Pvt.ltd</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Sales Executive</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2019 - 2020</p>
-                                    <h6 class="mb-0">XM Shopee</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Sales Distributor</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2020 - 2024</p>
-                                    <h6 class="mb-0">ERD Technologies Pvt.Ltd</h6>
-                                </div>
 
+                    <div class="tab-content">
+                        <!-- Experience Tab -->
+                        <div id="tab-1" class="tab-pane fade show active p-0">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2024 - Present
+                                        </div>
+                                        <h5 class="timeline-title">Software Developer</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-map-pin"></i> Freelance Projects
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2024 - 2024
+                                        </div>
+                                        <h5 class="timeline-title">Customer Support Executive</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-building"></i> Startek Pvt.ltd
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2019 - 2020
+                                        </div>
+                                        <h5 class="timeline-title">Sales Executive</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-building"></i> XM Shopee
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2020 - 2024
+                                        </div>
+                                        <h5 class="timeline-title">Sales Distributor</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-building"></i> ERD Technologies Pvt.Ltd
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Master of Business Administration (MBA) in Information Technology</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2026 - 2027</p>
-                                    <h6 class="mb-0">JMSIT Ghaziabad</h6>
+                        <!-- Education Tab -->
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2026 - 2027
+                                        </div>
+                                        <h5 class="timeline-title">Master of Business Administration (MBA) in
+                                            Information Technology</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-university"></i> JMSIT Ghaziabad
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Bachelor of Technology (B.Tech) in Computer Science</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2023 - 2026</p>
-                                    <h6 class="mb-0">BBDIT Ghaziabad</h6>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2023 - 2026
+                                        </div>
+                                        <h5 class="timeline-title">Bachelor of Technology (B.Tech) in Computer Science
+                                        </h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-university"></i> BBDIT Ghaziabad
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Diploma in Computer Engineering</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2020 - 2023</p>
-                                    <h6 class="mb-0">Jamia Millia Islamia (Delhi)</h6>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2020 - 2023
+                                        </div>
+                                        <h5 class="timeline-title">Diploma in Computer Engineering</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-university"></i> Jamia Millia Islamia (Delhi)
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Senior Secondary Education (12th Grade)</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2016 - 2018</p>
-                                    <h6 class="mb-0">Uttar-Paradesh Board</h6>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2016 - 2018
+                                        </div>
+                                        <h5 class="timeline-title">Senior Secondary Education (12th Grade)</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-school"></i> Uttar-Pradesh Board
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Secondary Education (10th Grade)</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2014 - 2016</p>
-                                    <h6 class="mb-0">Uttar-Paradesh Board</h6>
+                                <div class="col-12">
+                                    <div class="timeline-card">
+                                        <div class="timeline-year-badge">
+                                            <i class="far fa-calendar-alt"></i> 2014 - 2016
+                                        </div>
+                                        <h5 class="timeline-title">Secondary Education (10th Grade)</h5>
+                                        <p class="timeline-subtitle">
+                                            <i class="fas fa-school"></i> Uttar-Pradesh Board
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -385,471 +594,443 @@
     <!-- Expertise End -->
 
 
-<!-- Projects Start -->
-<div class="container-xxl py-6 pt-5" id="project">
-    <div class="container">
-
-        <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-
-            <div class="col-lg-6">
-                <h1 class="display-5 mb-0">My Projects</h1>
-            </div>
-
-            <div class="col-lg-6 text-lg-end">
-                <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                    <li class="mx-3 active" data-filter="*">All Projects</li>
-                </ul>
-            </div>
-
-        </div>
-
-
-        <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-
-            <!-- FixxBuddy -->
-            <div class="col-lg-4 col-md-6 portfolio-item first">
-
-                <div class="portfolio-img rounded overflow-hidden project-card"
-                    onclick="window.open('https://www.fixxbuddy.com', '_blank')">
-
-                    <img class="img-fluid"
-                        src="img/fixxbuddy2.png"
-                        alt="FixxBuddy">
-
-                </div>
-
-<div class="project-info">
-
-    <h5 class="project-title">FixxBuddy</h5>
-
-    <button type="button"
-        class="project-about-btn"
-        data-bs-toggle="modal"
-        data-bs-target="#fixxbuddyModal">
-        About
-    </button>
-
-</div>
-
-            </div>
-
-
-            <!-- Study Abroad -->
-            <div id="project-spacing"
-                class="col-lg-4 col-md-6 portfolio-item first">
-
-                <div class="portfolio-img rounded overflow-hidden project-card"
-                    onclick="window.open('https://zakirsameerk6.github.io/Study-Abroad/', '_blank')">
-
-                    <img class="img-fluid"
-                        src="img/Study_Abroad.png"
-                        alt="Study Abroad">
-
-                </div>
-
-                <div class="project-info text-center">
-
-                    <h5 class="project-title">
-                        Study Abroad
-                    </h5>
-
-                    <button type="button"
-                        class="project-about-btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#studyAbroadModal">
-                        About
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-<!-- Projects End -->
-
-
-<!-- FixxBuddy Modal -->
-<div class="modal fade project-modal"
-    id="fixxbuddyModal"
-    tabindex="-1"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-
-                <h5 class="modal-title text-center text-white">
-                    FixxBuddy
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <!-- Project Images -->
-                <div class="project-modal-images">
-
-                    <img src="img/fixxbuddy2.png"
-                        alt="FixxBuddy">
-
-                    <img src="img/fixxbuddy.png"
-                        alt="FixxBuddy">
-
-                    <!-- Add more images here -->
-
-                </div>
-
-
-                <!-- Project Details -->
-                <div class="project-modal-content">
-
-                    <p>
-                        FixxBuddy is a web-based home service booking
-                        platform that connects customers with professional
-                        service providers.
-                    </p>
-
-                    <p>
-                        The platform allows users to explore and book
-                        services such as AC repair, electrical work,
-                        plumbing, cleaning and other home services.
-                    </p>
-
-                    <h5>Key Features</h5>
-
-                    <ul>
-                        <li>User-friendly service booking system</li>
-                        <li>Secure OTP verification for service bookings</li>
-                        <li>Service details and quotation</li>
-                        <li>Professional assignment</li>
-                        <li>Booking and service management</li>
-                        <li>Customer feedback and rating</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-<!-- Study Abroad Modal -->
-<div class="modal fade project-modal"
-    id="studyAbroadModal"
-    tabindex="-1"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-
-                <h5 class="modal-title text-center text-white">
-                    Study Abroad
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <!-- Project Images -->
-                <div class="project-modal-images">
-
-                    <img src="img/Study_Abroad.png"
-                        alt="Study Abroad">
-
-                    <!-- Add more images here -->
-
-                </div>
-
-
-                <!-- Project Details -->
-                <div class="project-modal-content">
-
-                    <p>
-                        Study Abroad is a responsive website designed
-                        for students who are interested in studying
-                        overseas.
-                    </p>
-
-                    <p>
-                        The website provides organized information
-                        about study destinations, universities and
-                        related opportunities.
-                    </p>
-
-                    <h5>Key Features</h5>
-
-                    <ul>
-                         <li>Study destination information</li>
-                        <li>Responsive website design</li>
-                        <li>University information</li>
-                        <li>User-friendly navigation</li>
-                        <li>Modern and clean interface</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Projects Start -->
+    <div class="container-xxl py-6" id="project">
+        <div class="container">
+            <div class="row g-4 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
-                </div>
-                <!-- <div class="col-lg-6 text-lg-end">
-                           <a class="btn btn-primary py-3 px-5"
-                                     href="https://wa.me/919045917913?text=Hello%2C%20I%20see%20your%20portfolio%20website.%20Can%20we%20connect%3F"
-                                     target="_blank">
-                               <i class="fab fa-whatsapp me-2"></i> Say Hello
-                            </a>
-                </div> -->
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    
-<div class="d-flex justify-content-center align-items-center gap-2">
-
-    <a class="btn btn-primary py-3 px-5"
-       href="https://wa.me/919045917913?text=Hello%2C%20I%20see%20your%20portfolio%20website.%20Can%20we%20connect%3F"
-       target="_blank">
-        <i class="fab fa-whatsapp"></i> Say Hello
-    </a>
-
-    <a href="tel:+919045917913"
-       class="btn btn-primary py-3 px-5">
-        <i class="fas fa-phone"></i> Call Me
-    </a>
-
-</div>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-small">zakirsameerk6@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Location:</p>
-                    <h3 class="fw-bold">New Delhi</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2"
-                            href="https://x.com/zakirsameerk6?t=--BMCXO35fz2IVoLh_xUGQ&s=09" target="_blank"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/share/1AobXJGuP3/"
-                            target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a class="btn btn-square btn-primary me-2" href="target="_blank""><i class="fab fa-youtube"></i></a>-->
-                        <a class="btn btn-square btn-primary me-2"
-                            href="https://www.linkedin.com/in/zakirsameerk6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/zakirsameerk6"
-                            target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="section-eyebrow">
+                        <span class="section-eyebrow-dot"></span>
+                        <span>Showcase</span>
                     </div>
+                    <h2 class="section-title text-gradient-heading mb-0">Featured Projects</h2>
                 </div>
 
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mb-0" id="portfolio-flters">
+                        <li class="active" data-filter="*">All Projects</li>
+                    </ul>
+                </div>
+            </div>
 
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <!-- Notification Area (Now centered on top) -->
-                    <div id="notification" class="alert" style="display: none;"></div>
-
-                    <h4 id="message-heading"class="mb-4">Feel free to send us a message using the form below.</h4>
-                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Replace with your Web3Forms Access Key -->
-                        <input type="hidden" name="access_key" value="a803b1ab-d988-4a8b-a02d-78e39cad339e">
-
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Your Name" required>
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Your Email" required>
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control" id="mobile" name="mobile"
-                                        placeholder="Your Mobile" required>
-                                    <label for="mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject"
-                                        placeholder="Subject" required>
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        name="message" style="height: 100px" required></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.2s">
+                <!-- Project 1: FixxBuddy -->
+                <div class="col-lg-6 col-md-6 portfolio-item first">
+                    <div class="project-bento-card">
+                        <div class="project-img-wrapper" onclick="window.open('https://www.fixxbuddy.com', '_blank')">
+                            <img class="img-fluid" src="img/fixxbuddy2.png" alt="FixxBuddy">
+                            <div class="project-img-overlay">
+                                <span class="project-category-badge">Home Service Platform</span>
                             </div>
                         </div>
 
-                        <!-- Honeypot Spam Protection: Invisible checkbox -->
-                        <input type="checkbox" name="botcheck" style="display:none;" />
-                    </form>
+                        <div class="project-card-body">
+                            <h4 class="project-title">FixxBuddy</h4>
+                            <p class="project-summary">
+                                A web-based home-service booking platform connecting customers with professional service
+                                providers for AC repair, plumbing, electrical work, and cleaning.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+
+                            <div class="project-card-actions">
+                                <a href="https://www.fixxbuddy.com" target="_blank"
+                                    class="btn-project-action btn-project-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <button type="button" class="btn-project-action btn-project-about"
+                                    data-bs-toggle="modal" data-bs-target="#fixxbuddyModal">
+                                    <i class="fas fa-info-circle"></i> About
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Project 2: Study Abroad -->
+                <div class="col-lg-6 col-md-6 portfolio-item first">
+                    <div class="project-bento-card">
+                        <div class="project-img-wrapper"
+                            onclick="window.open('https://zakirsameerk6.github.io/Study-Abroad/', '_blank')">
+                            <img class="img-fluid" src="img/Study_Abroad.png" alt="Study Abroad">
+                            <div class="project-img-overlay">
+                                <span class="project-category-badge">Education &amp; Guidance</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h4 class="project-title">Study Abroad</h4>
+                            <p class="project-summary">
+                                A responsive website designed for students interested in studying overseas, offering
+                                curated information about global study destinations, universities, and opportunities.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+
+                            <div class="project-card-actions">
+                                <a href="https://zakirsameerk6.github.io/Study-Abroad/" target="_blank"
+                                    class="btn-project-action btn-project-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <button type="button" class="btn-project-action btn-project-about"
+                                    data-bs-toggle="modal" data-bs-target="#studyAbroadModal">
+                                    <i class="fas fa-info-circle"></i> About
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- FixxBuddy Modal -->
+    <div class="modal fade project-modal" id="fixxbuddyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FixxBuddy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Project Images -->
+                    <div class="project-modal-images">
+                        <img src="img/fixxbuddy2.png" alt="FixxBuddy Preview 1">
+                        <img src="img/fixxbuddy.png" alt="FixxBuddy Preview 2">
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="project-modal-content">
+                        <p>
+                            FixxBuddy is a web-based home service booking platform that connects customers with
+                            professional service providers.
+                        </p>
+                        <p>
+                            The platform allows users to explore and book services such as AC repair, electrical work,
+                            plumbing, cleaning and other home services.
+                        </p>
+
+                        <h5><i class="fas fa-check-double text-cyan"></i> Key Features</h5>
+                        <ul>
+                            <li>User-friendly service booking system</li>
+                            <li>Secure OTP verification for service bookings</li>
+                            <li>Service details and quotation</li>
+                            <li>Professional assignment</li>
+                            <li>Booking and service management</li>
+                            <li>Customer feedback and rating</li>
+                        </ul>
+
+                        <div class="pt-3">
+                            <a href="https://www.fixxbuddy.com" target="_blank" class="btn btn-primary btn-sm px-4">
+                                <i class="fas fa-external-link-alt me-2"></i> Visit Live Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Abroad Modal -->
+    <div class="modal fade project-modal" id="studyAbroadModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Study Abroad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Project Images -->
+                    <div class="project-modal-images">
+                        <img src="img/Study_Abroad.png" alt="Study Abroad Preview">
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="project-modal-content">
+                        <p>
+                            Study Abroad is a responsive website designed for students who are interested in studying
+                            overseas.
+                        </p>
+                        <p>
+                            The website provides organized information about study destinations, universities and
+                            related opportunities.
+                        </p>
+
+                        <h5><i class="fas fa-check-double text-cyan"></i> Key Features</h5>
+                        <ul>
+                            <li>Study destination information</li>
+                            <li>Responsive website design</li>
+                            <li>University information</li>
+                            <li>User-friendly navigation</li>
+                            <li>Modern and clean interface</li>
+                        </ul>
+
+                        <div class="pt-3">
+                            <a href="https://zakirsameerk6.github.io/Study-Abroad/" target="_blank"
+                                class="btn btn-primary btn-sm px-4">
+                                <i class="fas fa-external-link-alt me-2"></i> Visit Live Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-6" id="contact">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8">
+                    <div class="section-eyebrow">
+                        <span class="section-eyebrow-dot"></span>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h2 class="section-title text-gradient-heading">Let's Work Together</h2>
+                    <p class="text-secondary mb-0">
+                        Have a project in mind, an opportunity to discuss, or just want to connect? Reach out anytime.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info Left -->
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="contact-info-card">
+                        <div>
+                            <!-- Quick Action CTAs -->
+                            <div class="contact-cta-buttons">
+                                <a class="btn btn-whatsapp flex-fill"
+                                    href="https://wa.me/919045917913?text=Hello%2C%20I%20see%20your%20portfolio%20website.%20Can%20we%20connect%3F"
+                                    target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Say Hello
+                                </a>
+
+                                <a href="tel:+919045917913" class="btn btn-call-modern flex-fill">
+                                    <i class="fas fa-phone-alt"></i> Call Me
+                                </a>
+                            </div>
+
+                            <!-- Email Info -->
+                            <div class="contact-detail-row">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-detail-label">Mail me</div>
+                                    <h5 class="contact-detail-value">
+                                        <a href="mailto:zakirsameerk6@gmail.com">zakirsameerk6@gmail.com</a>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <!-- Location Info -->
+                            <div class="contact-detail-row">
+                                <div class="contact-detail-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-detail-label">Location</div>
+                                    <h5 class="contact-detail-value">New Delhi, India</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="pt-4">
+                            <div class="contact-detail-label mb-3">Follow me</div>
+                            <div class="d-flex gap-2">
+                                <a class="btn-square" href="https://x.com/zakirsameerk6?t=--BMCXO35fz2IVoLh_xUGQ&s=09"
+                                    target="_blank" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn-square" href="https://www.facebook.com/share/1AobXJGuP3/" target="_blank"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn-square"
+                                    href="https://www.linkedin.com/in/zakirsameerk6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a class="btn-square" href="https://github.com/zakirsameerk6" target="_blank"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- Notification Area -->
+                    <div id="notification" class="alert" style="display: none;"></div>
+
+                    <div class="contact-form-card">
+                        <h4 id="message-heading" class="text-white mb-4">
+                            Feel free to send us a message using the form below.
+                        </h4>
+
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="a803b1ab-d988-4a8b-a02d-78e39cad339e">
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="mobile" name="mobile"
+                                            placeholder="Your Mobile" required>
+                                        <label for="mobile">Your Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            name="message" style="height: 130px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <button class="btn btn-primary py-3 px-5 w-100 w-sm-auto" type="submit">
+                                        <i class="fas fa-paper-plane me-2"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" style="display:none;" />
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Contact End -->
 
 
+    <!-- Footer Start -->
+    <footer class="container-fluid text-white">
+        <div class="container">
+            <div class="row g-5">
+                <!-- About Column -->
+                <div class="col-lg-5 col-md-6">
+                    <span class="footer-brand-title">Mohd Zakir</span>
+                    <div class="footer-role">Software Developer</div>
 
-<!-- Footer Start -->
+                    <p class="footer-bio">
+                        Building modern, responsive, and user-friendly web applications with cutting-edge technologies,
+                        while leveraging AI/ML and innovative digital solutions to create meaningful user experiences.
+                    </p>
 
-<footer class="container-fluid bg-dark text-white pt-5 pb-4"> <div class="container"> <div class="row g-5">
+                    <div class="d-flex gap-2">
+                        <a class="btn-square" href="https://www.linkedin.com/in/zakirsameerk6" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn-square" href="https://github.com/zakirsameerk6" target="_blank"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="btn-square" href="https://wa.me/919045917913" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a class="btn-square" href="mailto:zakirsameerk6@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <!-- About -->
-        <div class="col-lg-5 col-md-6">
-            <h2 class="text-primary fw-bold mb-3">Mohd Zakir</h2>
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a class="footer-link" href="#home">Home</a>
+                        <a class="footer-link" href="#about">About</a>
+                        <a class="footer-link" href="#skill">Skills</a>
+                        <a class="footer-link" href="#project">Projects</a>
+                        <a class="footer-link" href="#contact">Contact</a>
+                    </div>
+                </div>
 
-            <h5 class="text-white mb-3">
-                Software Developer
-            </h5>
+                <!-- Contact Details -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Get In Touch</h5>
 
-            <p class="text-light mb-4">
-                    Building modern, responsive, and user-friendly web applications
-                    with cutting-edge technologies, while leveraging AI/ML and
-                    innovative digital solutions to create meaningful user experiences
-            </p>
+                    <div class="footer-contact-item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
 
-            <div class="d-flex">
-                <a class="btn btn-square btn-primary me-2"
-                    href="https://www.linkedin.com/in/zakirsameerk6"
-                    target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                    <div class="footer-contact-item">
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:+919045917913">+91 90459 17913</a>
+                    </div>
 
-                <a class="btn btn-square btn-primary me-2"
-                    href="https://github.com/zakirsameerk6"
-                    target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+                    <div class="footer-contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:zakirsameerk6@gmail.com">zakirsameerk6@gmail.com</a>
+                    </div>
 
-                <a class="btn btn-square btn-primary me-2"
-                    href="https://wa.me/919045917913"
-                    target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                    <div class="footer-contact-item">
+                        <i class="fa fa-code"></i>
+                        <span>React.js • JavaScript • AI/ML</span>
+                    </div>
+                </div>
+            </div>
 
-                <a class="btn btn-square btn-primary"
-                    href="mailto:zakirsameerk6@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom-bar">
+                <div>
+                    &copy; 2026 <strong class="text-white">Mohd Zakir</strong>. All Rights Reserved.
+                </div>
+                <div>
+                    Designed &amp; Developed with Modern Excellence
+                </div>
             </div>
         </div>
-
-
-        <!-- Quick Links -->
-        <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Quick Links</h5>
-
-            <a class="btn btn-link text-light footer-link" href="#home">
-                Home
-            </a>
-
-            <a class="btn btn-link text-light footer-link" href="#about">
-                About
-            </a>
-
-            <a class="btn btn-link text-light footer-link" href="#skill">
-                Skills
-            </a>
-
-            <a class="btn btn-link text-light footer-link" href="#project">
-                Projects
-            </a>
-
-            <a class="btn btn-link text-light footer-link" href="#contact">
-                Contact
-            </a>
-        </div>
-
-
-        <!-- Contact -->
-        <div class="col-lg-4 col-md-6">
-            <h5 class="text-white mb-4">Get In Touch</h5>
-
-            <p class="mb-3">
-                <i class="fa fa-map-marker-alt text-primary me-3"></i>
-                New Delhi, India
-            </p>
-
-            <p class="mb-3">
-                <i class="fa fa-phone-alt text-primary me-3"></i>
-                <a href="tel:+919045917913" class="text-light">
-                    +91 90459 17913
-                </a>
-            </p>
-
-            <p class="mb-3">
-                <i class="fa fa-envelope text-primary me-3"></i>
-                <a href="mailto:zakirsameerk6@gmail.com" class="text-light">
-                    zakirsameerk6@gmail.com
-                </a>
-            </p>
-
-            <p class="mb-0">
-                <i class="fa fa-code text-primary me-3"></i>
-                React.js • JavaScript • AI/ML
-            </p>
-        </div>
-
-    </div>
-
-    
-
-    
-
-</div>
-
-</footer> <!-- Footer End -->
+    </footer>
+    <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
